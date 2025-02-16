@@ -1,0 +1,340 @@
+/*-----GENERAL-----*/
+*{
+    font-family: "DM Sans";
+}
+
+.border-bottom{
+        border-color: #0097E5!important;
+        margin-top: 20px;
+}
+
+.border-bottom-contacto{
+    border-color: #1E1C69 !important;
+}
+
+.btn.p-2{
+    padding:12px !important;
+}
+
+.w-22{
+    width: 22px;
+}
+
+
+   /*Margenes y padding*/
+    .mb-4-4{
+        margin-bottom: 2rem !important;
+    }
+    .padding-5-p{
+        padding: 5%;
+    }
+    .ps-3-5{
+        padding-left: 1.3rem;
+    }
+
+    .m-top-section{
+        margin-top: 7rem;
+    }
+    .m-bottom-section{
+        margin-bottom: 7rem;
+    }
+
+    .p-top-section{
+        padding-top: 7rem;
+    }
+    .p-bottom-section{
+        padding-bottom: 7rem;
+    }
+    
+    /* Tipografias */
+
+    .fs-4-5{
+        font-size: 18px;
+    }
+
+
+    .h2-title{
+        font-weight: 500;
+     }
+    .h4-title{
+        font-weight: 700;
+    }
+    .font-weight-500{
+        font-weight: 500;
+    }
+
+    .font-weight-700{
+        font-weight: 700;
+    }
+
+    h1{
+        font-size: 3.75rem;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+    h6.rounded-2{
+        width: fit-content;
+    }
+
+    .border-color-grey{
+        border: 1px solid #E8EDED;
+    }
+    .border-color-celeste{
+        border-color: #0097E5 !important;
+    }
+
+    .border.h6-epigrafe{
+        border: 1px solid #0097E5 !important;
+    }
+
+    .h6-epigrafe{
+        font-weight: 700;
+    }
+              /* responsive de tipografias */
+            /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+            @media (max-width: 1399.98px) { 
+                h1{
+                    font-size: 3.125rem;
+                }
+            }
+
+            /* `xl` applies to large devices (desktops, less than 1200px) */
+            @media (max-width: 1199.98px) { 
+                h2{
+                    font-size: 2.5rem;
+                }
+            }
+
+            /* `xl` applies to large devices (desktops, less than 576px) */
+            @media (max-width: 575.98px) { 
+                h2{
+                    font-size: 1.5rem;
+                }
+                h1{
+                    font-size: 2.5rem;
+                }
+            }            
+
+    /*Colores*/
+    .texto-color-azul{
+        color: #1E1C69 !important;
+    }  
+    .fondo-color-azul{
+        background-color: #1E1C69 !important;
+    }    
+    
+    .texto-color-celeste{
+        color: #0097E5 !important;
+    }
+
+    .texto-color-gris{
+        color: #666666;
+    }
+    .fondo-color-card-grey{
+        background: #F4F8F9 !important;
+    }
+    .fondo-color-celeste{
+    background-color: #0097E5 !important;
+}
+
+    .border-blanco{
+        border: 1px solid white !important;
+    }
+    .border-blanco:hover,.border-blanco:active,.border-blanco:focus {
+        border: 1px solid white !important;
+    }
+
+    .border-celeste{
+        border: 1px solid #0097E5 !important;
+    }
+
+    .border-celeste:hover,.border-celeste:active,.border-celeste:focus {
+        border: 1px solid #0097E5 !important;
+    }
+
+    .border-azul{
+        border: 1px solid #1E1C69 !important;
+    }
+
+    .border-azul:hover,.border-azul:active,.border-azul:focus {
+        border: 1px solid #1E1C69 !important;
+    }
+
+
+    .texro-gris-color{
+        color: #666666;
+    }
+
+    .texto-color-blanco{
+        color: white;
+    }
+
+/*------////////////PAGINA INDEX////////////----*/
+
+    /*-----SECCIÓN PRESENTACIÓN*/
+
+        .carousel-caption-1{
+            text-align: start;
+            max-width: 800px;
+            color: white;
+        }
+
+
+        .seccion-presentacion-img{
+            background: url("./imagenes/section-presentacion-img.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            height: 100vh;
+            object-fit: cover;    
+            background-position:center center;    
+        }
+
+        .carousel-item{
+            height: 100vh;
+        }
+        
+
+        /* Responsive seccion presentacion */
+            /* `xl` applies to large devices (desktops, less than 1200px) */
+                @media (max-width: 1199.98px) { 
+                    .carousel-caption-1{
+                        max-width: 600px;
+                    }
+                    
+                    .fs-5.seccion-presentacion{
+                        font-size: 1rem !important; /* tamaño fuente descripcion */
+                    }
+                }
+            /* `lg` applies to medium devices (tablets, less than 992px) */
+                @media (max-width: 991.98px) { 
+                    .carousel-caption-1{
+                        max-width: 500px;
+                    }
+
+                }        
+            /* `md` applies to small devices (landscape phones, less than 768px) */
+                @media (max-width: 767.98px) {                 
+                    .carousel-caption-1{
+                        max-width: 400px;
+                    }
+                }        
+
+            /* `xs` applies to small devices (landscape phones, less than 576px) */
+            @media (min-width: 350px) and (max-width: 575.98px) {                 
+                .mx-xs-3{
+                    margin-right: .5rem !important;
+                    margin-left:.5rem !important;
+                }
+            }    
+            
+            
+            /* `xs` applies to small devices (landscape phones, less than 576px) */
+            @media  (max-width: 349.98px) {                 
+                .mx-xs-3{
+                    display: block;
+                    margin-right: 0 !important;
+                    margin-left:0 !important;
+                }
+                .btn-max-width-350{
+                    display: block;
+                }
+
+            }    
+                            
+
+    /*-----SECCIÓN SERVICIOS*/
+    .card-section-servicios{
+        border: none !important;
+    }
+
+    /*-----SECCIÓN SITIOS DE INTERES*/
+    .card-sitios-interes{
+        width: 67px; 
+        background-color: #0097E5; 
+        text-align: center; 
+        align-self: stretch; 
+        min-height: 67px; 
+        align-content: center;
+    }
+
+    /*------////////////PAGINA NOSOTROS////////////----*/
+
+
+    .seccion-presentacion-img-nosotros{
+        background: url("./imagenes/section-presentacion-img-nosotros.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 100vh;
+        object-fit: cover;    
+        background-position:center center;    
+    }
+
+
+
+    /*----SECCIÓN NUESTROS SOCIOS----*/
+    @media (max-width: 764.98px) {                 
+        .h5-765{
+            font-size: 1.5rem;
+        }
+    }    
+    
+
+
+    /*------////////////PAGINA SERVICIOS////////////----*/
+
+
+    .seccion-presentacion-img-servicios{
+        background: url("./imagenes/section-presentacion-img-servicios.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 100vh;
+        object-fit: cover;    
+        background-position:center center;    
+    }
+
+
+    /*----SECCIÓN NUESTROS SOCIOS----*/
+
+    .h2-servicios{
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    
+    .btn-pagina-servicios.border{
+        border: 1px solid #0097E5 !important;
+    }
+
+    ul.list-style-servicios{
+        list-style-image: url('imagenes/iconos/icon-item-list.png');
+    }
+
+    ul.list-style-servicios li{
+        padding-bottom: 10px;
+    }
+
+    /* `xl` applies to large devices (desktops, less than 576px) */
+
+    @media (max-width: 764.98px) {
+        .h2-servicios{
+            font-size: 37px;
+        }                 
+
+    }    
+
+    /* `xl` applies to large devices (desktops, less than 576px) */
+        @media (max-width: 575.98px) { 
+            .h2-servicios{
+                font-size: 32px;
+            }
+
+        } 
+        
+    
+
+
+    /*------////////////PAGINA CONTACTO////////////----*/        
+    
+
