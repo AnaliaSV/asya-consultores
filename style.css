@@ -9,7 +9,7 @@
 }
 
 .border-bottom-contacto{
-    border-color: #1E1C69 !important;
+    border-bottom: 1px solid #1E1C69 !important;
 }
 
 .btn.p-2{
@@ -25,6 +25,7 @@
     .mb-4-4{
         margin-bottom: 2rem !important;
     }
+
     .padding-5-p{
         padding: 5%;
     }
@@ -309,10 +310,12 @@
 
     ul.list-style-servicios{
         list-style-image: url('imagenes/iconos/icon-item-list.png');
+        padding-left: 1.3rem !important;
+
     }
 
     ul.list-style-servicios li{
-        padding-bottom: 10px;
+        padding-bottom: 12px;
     }
 
     /* `xl` applies to large devices (desktops, less than 576px) */
