@@ -22,6 +22,12 @@
 
 
    /*Margenes y padding*/
+
+   .p-4-4{
+    padding: 2rem;
+   }
+
+
     .mb-4-4{
         margin-bottom: 2rem !important;
     }
@@ -184,12 +190,12 @@
 
 
         .seccion-presentacion-img{
-            background: url("./imagenes/section-presentacion-img.jpg");
+            background: url("./imagenes/section-presentacion-img.png");
             background-repeat: no-repeat;
             background-size:cover;
             height: 100vh;
             object-fit: cover;    
-            background-position:center center;    
+            background-position:90%;    
         }
 
         .carousel-item{
