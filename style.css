@@ -314,11 +314,6 @@
         border: 1px solid #0097E5 !important;
     }
 
-    ul.list-style-servicios{
-        list-style-image: url('imagenes/iconos/icon-item-list.png');
-        padding-left: 1.3rem !important;
-
-    }
 
     ul.list-style-servicios li{
         padding-bottom: 12px;
