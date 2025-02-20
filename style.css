@@ -162,6 +162,7 @@
     .fondo-color-card-grey{
         background: #F4F8F9 !important;
     }
+
     .fondo-color-celeste{
     background-color: #0097E5 !important;
 }
@@ -380,6 +381,15 @@
     
 
     /*------////////////PAGINA SERVICIOS////////////----*/
+
+    
+    .fondo-color-card-grey-servicios{
+        background: #F4F8F9 !important;
+    }
+
+    .fondo-color-card-grey-servicios:hover{
+        background: #DFE2EB !important;
+    }
 
 
     .seccion-presentacion-img-servicios{
