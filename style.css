@@ -12,10 +12,10 @@
     border-bottom: 1px solid #1E1C69 !important;
 }
 
-.btn.p-2{
-    padding:12px !important;
-}
 
+.btn.p-2{
+    padding:12px 18px !important;
+}
 .w-22{
     width: 22px;
 }
@@ -52,6 +52,25 @@
     .p-bottom-section{
         padding-bottom: 7rem;
     }
+
+                /* `xl` applies to large devices (desktops, less than 576px) */
+                @media (max-width: 767.98px) { 
+                    .p-bottom-section-0{
+                        padding-bottom: 0;
+                    } 
+
+                } 
+                /* Medium devices (tablets, 768px and up) */
+                @media (min-width: 768px) { 
+
+                    .rounded-md-4 {
+                        border-radius: 1rem;
+                    }
+
+                }     
+
+
+
     
     /* Tipografias */
 
@@ -85,6 +104,7 @@
         width: fit-content;
     }
 
+    
     .border-color-grey{
         border: 1px solid #E8EDED;
     }
@@ -97,7 +117,7 @@
     }
 
     .h6-epigrafe{
-        font-weight: 700;
+        font-weight: 600;
     }
               /* responsive de tipografias */
             /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
@@ -117,7 +137,7 @@
             /* `xl` applies to large devices (desktops, less than 576px) */
             @media (max-width: 575.98px) { 
                 h2{
-                    font-size: 2.3rem;
+                    font-size: 32px;
                 }
                 h1{
                     font-size: 2.5rem;
@@ -178,6 +198,61 @@
         color: white;
     }
 
+    /* botones  */
+    .btn.fondo-color-azul:hover, .btn.fondo-color-azul:hover:active{
+        background-color: #0097E5 !important;
+        border: 1px solid #0097E5 !important;
+        color: white;
+    }
+
+    .btn.fondo-color-celeste:hover, .btn.fondo-color-celeste:active{
+        background-color: white !important;
+        border: 1px solid white !important;
+        color: #0097E5;
+    }
+
+    .btn-border-white{
+        border: 1px solid white;
+        color: white;
+
+    }
+
+    .btn-border-white:hover, .btn-border-white:active{
+        border: 1px solid #0097E5;
+        color: #0097E5;
+    }
+
+    /*header*/
+    .active-1{
+        color: #0097E5;
+    }
+    .list-header:hover{
+        color: #0097E5;
+    }
+
+    /* footer */
+    .list-footer{
+        color: white;
+    }
+    
+    .list-footer:hover{
+        color: #0097E5;
+    }
+
+    /* ----SECCION CTA DE TODAS LAS PÁGINAS---- */
+
+            /* `xl` applies to large devices (desktops, less than 576px) */
+            @media (max-width: 575.98px) { 
+                .img-responsive-cta{
+                    transform: scale(1.5); /* you can change the value also */
+                    -webkit-transform-origin: center;
+                     transform-origin: center;    
+                }            
+            }    
+
+
+
+
 /*------////////////PAGINA INDEX////////////----*/
 
     /*-----SECCIÓN PRESENTACIÓN*/
@@ -211,7 +286,7 @@
                     }
                     
                     .fs-5.seccion-presentacion{
-                        font-size: 1rem !important; /* tamaño fuente descripcion */
+                        font-size: 1.1rem !important; /* tamaño fuente descripcion */
                     }
                 }
             /* `lg` applies to medium devices (tablets, less than 992px) */
@@ -265,7 +340,10 @@
         min-height: 67px; 
         align-content: center;
     }
-
+    
+    .card-sitios-interes:hover{
+        background-color: #1E1C69; 
+    }
     /*------////////////PAGINA NOSOTROS////////////----*/
 
 
@@ -287,7 +365,6 @@
         }
     }    
     
-
 
     /*------////////////PAGINA SERVICIOS////////////----*/
 
@@ -340,5 +417,12 @@
 
 
     /*------////////////PAGINA CONTACTO////////////----*/        
+
+    .btn-contacto{
+        background-color: #0097E5 !important;
+        color: white !important;
+        border: 1px solid #0097E5 !important;
+
+    }
     
 
