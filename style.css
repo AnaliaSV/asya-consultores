@@ -222,6 +222,19 @@
         color: #0097E5;
     }
 
+    
+    /* .btn-border-celeste{
+        border: 1px solid #0097E5;
+        color: #0097E5;
+    }
+
+    .btn-border-celeste:hover, .btn-border-celeste:active{
+        border: 1px solid #1E1C69;
+        color: #1E1C69;
+    } */
+
+
+
     /*header*/
     .active-1{
         color: #0097E5;
@@ -389,6 +402,12 @@
     
     .btn-pagina-servicios.border{
         border: 1px solid #0097E5 !important;
+        color:#0097E5;
+    }
+
+    .btn-pagina-servicios.border:hover, .btn-pagina-servicios.border:active {
+            border: 1px solid #1E1C69 !important;
+            color: #1E1C69 !important;
     }
 
 
