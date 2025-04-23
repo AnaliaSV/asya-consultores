@@ -71,14 +71,21 @@
                                   <input type="text" name="user_preference" style="display:none;" autocomplete="off">
                                   <input type="hidden" id="form_time" name="form_time">
                               </div>
-                              <div class="mb-3">
+                              <div class="mb-2">
                                   <!-- Comentarios -->
                                   <label for="comentario" class="form-label texto-color-azul">Mensaje</label>
                                   <textarea name="comentario" class="form-control border-azul" id="comentario" rows="3" required></textarea>
                               </div>
                               <div class="pb-5">
                                   <!-- Enviar -->
-                                  <button class="btn p-2 fondo-color-azul texto-color-blanco font-weight-500 btn-max-width-350" type="submit">Enviar</button>                        
+                                  <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                                  <div class="pb-2">
+                                    <small>This site is protected by reCAPTCHA and the Google
+                                      <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                                      <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                                    </small>   
+                                  </div>
+                                  <button class="btn p-2 fondo-color-azul texto-color-blanco font-weight-500 btn-max-width-350" type="submit">Enviar</button>                       
                               </div>
                               <!-- Mensajes aquí -->
                               <div id="mensaje-estado" style="color: red; font-weight: bold; height: 25px;"> </div> 
@@ -187,7 +194,14 @@
           document.getElementById('form_time').value = Math.floor(Date.now() / 1000);
 
         </script>
-        
-        
+    <!-- Script de Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfYM-0qAAAAACI1C1lG57UFuqWUht4LxSs37LBN"></script>
+    <script>
+      grecaptcha.ready(function() {
+      grecaptcha.execute('6LfYM-0qAAAAACI1C1lG57UFuqWUht4LxSs37LBN', { action: 'submit' }).then(function(token) {
+        document.getElementById('recaptchaResponse').value = token;
+          });
+      });
+    </script>            
     </body>
 </html>
